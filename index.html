@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
   </head>
@@ -12,7 +13,7 @@
         <h1>vanilla cake recipe 🍰</h1>
       </header>
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="Enter the cake to bake"
@@ -23,11 +24,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="recipe">
-          2 ⅔ cups all-purpose flour, or more as needed
-          <br />
-          1 cup white sugar
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
       <footer>
         This project was coded with ❤️❤️by
