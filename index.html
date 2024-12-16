@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <title>a cake recipe</title>
   </head>
   <body>
     <div class="container">
@@ -16,11 +17,12 @@
         <form id="recipe-generator-form">
           <input
             type="text"
-            placeholder="Enter the cake to bake"
+            placeholder="Enter the type of cake you would like to get the recipe on"
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
