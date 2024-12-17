@@ -11,22 +11,25 @@
   <body>
     <div class="container">
       <header>
-        <h1>vanilla cake recipe 🍰</h1>
+        <h1>AI CAKE RECIPE GENERATOR🍰</h1>
       </header>
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the type of cake you would like to get the recipe on"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="recipe-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the type of cake you would like to get the recipe on"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: chocolate, red velvet or Cheese</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This project was coded with ❤️❤️by
